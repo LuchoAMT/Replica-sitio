@@ -8,12 +8,12 @@
 }
 .contenedor-personaje{
     padding: 0;
-    height: 80vh;
+    height: auto;
 }
 .contenedor-personaje-flex{
     display: flex;
     flex-direction: row;
-    max-height: 80vh;
+    /* max-height: 80vh; */
 }
 .info-derecha{
     flex-direction: row-reverse;

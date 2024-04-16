@@ -91,4 +91,7 @@
     .texto-numeros{
         max-width: 100%;
     }
+    .infolink-container{
+        height: auto;
+    }
 }
