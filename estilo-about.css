@@ -1,0 +1,94 @@
+.intro-about{
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 5%;
+}
+.amogus{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Zen Dots', sans-serif;
+    color: whitesmoke;
+    font-size: 150%;
+}
+.especial{
+    font-family: 'Zen Dots', sans-serif;
+    color: whitesmoke;
+}
+#about{
+    padding-bottom: 5%;
+}
+#about .contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+    padding-bottom: 5%;
+}
+#about .contenedor-info{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#numeros{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 0%;
+    height: auto;
+    margin-top: auto;
+}
+.texto-numeros{
+    max-width: 70%;
+}
+.numero-infolink *{
+    font-size: 300%;
+    text-align: center;
+    color: #d60d5e; 
+    justify-content: center;
+}
+
+
+.numero-infolink .animacion::after {
+    content: "0"; /* Inicialmente, muestra 0 */
+    animation: contar 2s steps(1, end) forwards; /* 20 pasos en 5 segundos */
+}
+@keyframes contar {
+    from { content: "0"; } /* Comienza desde 0 */
+    to { content: attr(data-number); } /* Termina en el valor proporcionado en data-number */
+
+}
+
+
+
+#mision-vision{
+    padding-top: 0;
+}
+#mision-vision .contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+#mision-vision .contenedor-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:fill ; /* Ajusta la imagen para que cubra completamente el contenedor */
+}
+
+@media screen and (max-width: 500px) {
+    .intro-about{
+        max-width: 100%;
+        padding-bottom: 25%;
+    }
+    #about .contenedor-imagen{
+        width: 100%;
+        max-height: 50vh;
+        margin-top: -25%;
+    }
+    #about .contenedor-imagen img{
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .texto-numeros{
+        max-width: 100%;
+    }
+}

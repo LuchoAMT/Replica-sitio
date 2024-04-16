@@ -1,0 +1,103 @@
+#intro-lore{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 0%;
+    background-image: none;
+}
+.intro-historia{
+    padding-bottom: 5%;
+}
+.contenedor-personaje{
+    padding: 0;
+    height: 80vh;
+}
+.contenedor-personaje-flex{
+    display: flex;
+    flex-direction: row;
+    max-height: 80vh;
+}
+.info-derecha{
+    flex-direction: row-reverse;
+}
+.contenedor-imagen, .contenedor-info{
+    flex-basis: 50vw;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texto-info-resaltadao{
+    color: #f200ff;
+    font: bold;
+    font-family: 'Zen Dots', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+.contenedor-imagen{
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    filter: brightness(0.9);
+}
+#Heihachi-bg{
+    background-image: url(media_historia/heihachi_background.jpg);
+}
+#kazuya-bg{
+    background-image: url(media_historia/kazuya_background.jpg);
+}
+#jin-bg{
+    background-image: url(media_historia/jin_background.jpg);
+}
+.info{
+    padding: 10%;
+}
+.imagen-movida-izquierda{
+    margin-left: -75%;
+    height: 50%;
+}
+.imagen-movida-izquierda img{
+    max-height: 100%;
+    width: auto;    
+}
+
+.imagen-movida-derecha{
+    margin-right: -75%;
+    height: 50%;
+}
+.imagen-movida-derecha img{
+    max-height: 100%;
+    width: auto;    
+}
+
+@media screen and (max-width: 500px){
+    .contenedor-personaje {
+        height: auto; 
+        padding-bottom: 5%;
+    }
+
+    .contenedor-personaje-flex {
+        flex-direction: column-reverse; 
+        max-height: none;
+    }
+
+    .contenedor-info{
+        /* padding-top: 5%;
+        padding-bottom: 5%; */
+        max-height: none;
+    }
+    .contenedor-imagen{
+        max-height: 80vh;
+    }
+    .contenedor-imagen, .contenedor-info {
+        flex-basis: 100%; 
+        max-width: 100%; 
+    }
+
+    .imagen-movida-izquierda, .imagen-movida-derecha {
+        margin-left: 0; 
+        margin-right: 0; 
+        height: auto;
+        max-height: 30vh;
+    }
+    .imagen-movida-izquierda img, .imagen-movida-derecha img{
+        max-height: 30vh;
+    }
+}
